@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  deep_learning_training:
+    build:
+      context: .
+      dockerfile: docker/deep_learning_training/Dockerfile
+    container_name: deep_learning_training
+    platform: linux/amd64
+    working_dir: /app
+    volumes:
+      - ./deep_learning/workspace:/app/workspace
+      - ./deep_learning/data:/app/data
+    environment:
+      - TZ=Asia/Tokyo
+    ports:
+      - "8888:8888"
+    tty: true
