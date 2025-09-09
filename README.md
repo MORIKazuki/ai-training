@@ -28,3 +28,6 @@
 ```
 
 5. `deep_learning/data`配下に`sin.png`が生成されることを確認する(VisualStudioCode拡張機能をあらかじめ入れておくと便利)
+
+## 参考資料
+[ゼロから作るDeep Learning ―Pythonで学ぶディープラーニングの理論と実装](https://www.oreilly.co.jp/books/9784873117584/)
